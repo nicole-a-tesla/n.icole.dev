@@ -29,7 +29,7 @@ const Home: NextPage = () => {
                 <a href="https://github.com/nicole-a-tesla">github</a>
               </li>
               <li className={listItemClasses}>
-                <a href="https://n.icole.dev/travel">travel</a>
+                <a href="mailto:nicole.ashley.mccabe@gmail.com">say hi</a>
               </li>
             </ul>
           </div>
