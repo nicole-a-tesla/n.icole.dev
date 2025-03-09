@@ -23,13 +23,10 @@ const Home: NextPage = () => {
           <div>
             <ul className="flex">
               <li className={listItemClasses}>
-                <a href="https://nicole-a-tesla.github.io/set-game">play set</a>
+                <a href="https://www.linkedin.com/in/nicoleamccabe">linkedIn</a>
               </li>
               <li className={listItemClasses}>
                 <a href="https://github.com/nicole-a-tesla">github</a>
-              </li>
-              <li className={listItemClasses}>
-                <a href="https://www.linkedin.com/in/nicoleamccabe">linkedIn</a>
               </li>
               <li className={listItemClasses}>
                 <a href="mailto:nicole.ashley.mccabe@gmail.com">say hi</a>
