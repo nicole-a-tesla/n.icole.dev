@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import GithubSVG from "../components/svgs/github";
 import LinkedInSVG from "../components/svgs/linkedin";
 import EmailSVG from "../components/svgs/email";
@@ -30,17 +29,17 @@ const Home: NextPage = () => {
             </ul>
             <ul className="flex">
               <li className="m-3">
-                <a href="https://github.com/nicole-a-tesla" target="_blank">
+                <a href="https://github.com/nicole-a-tesla" target="_blank" rel="noreferrer">
                   <GithubSVG />
                 </a>
               </li>
               <li className="m-3">
-                <a href="https://www.linkedin.com/in/nicoleamccabe" target="_blank">
+                <a href="https://www.linkedin.com/in/nicoleamccabe" target="_blank" rel="noreferrer">
                   <LinkedInSVG />
                 </a>
               </li>
               <li className="m-3">
-                <a href="mailto:nicole.ashley.mccabe@gmail.com" target="_blank">
+                <a href="mailto:nicole.ashley.mccabe@gmail.com" target="_blank" rel="noreferrer">
                   <EmailSVG />
                 </a>
               </li>
