@@ -6,8 +6,6 @@ import LinkedInSVG from "../components/svgs/linkedin";
 import EmailSVG from "../components/svgs/email";
 
 const Home: NextPage = () => {
-  ;
-
   return (
       <div className="bg-pink h-screen w-screen">
       <Head>
