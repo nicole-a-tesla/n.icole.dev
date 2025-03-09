@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           <p className="text-xl mb-5">a software engineer living in Edinburgh.</p>
 
           <div>
-            <ul className="flex">
+            <ul className="flex flex-col md:flex-row">
               <li className={listItemClasses}>
                 <a href="https://nicole-a-tesla.github.io/set-game">play set</a>
               </li>
