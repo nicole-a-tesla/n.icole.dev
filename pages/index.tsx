@@ -1,8 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
+import GithubSVG from "../components/svgs/github";
+import LinkedInSVG from "../components/svgs/linkedin";
+import EmailSVG from "../components/svgs/email";
 
 const Home: NextPage = () => {
-  const listItemClasses = "mr-10 text-xl underline hover:text-gray-500";
+  ;
 
   return (
       <div className="bg-pink h-screen w-screen">
@@ -21,18 +25,26 @@ const Home: NextPage = () => {
           <p className="text-xl mb-5">a software engineer living in Edinburgh.</p>
 
           <div>
-            <ul className="flex flex-col md:flex-row">
-              <li className={listItemClasses}>
+            <ul className="flex justify-center">
+              <li className="text-xl underline hover:text-(--purple)">
                 <a href="https://nicole-a-tesla.github.io/set-game">play set</a>
               </li>
-              <li className={listItemClasses}>
-                <a href="https://www.linkedin.com/in/nicoleamccabe">linkedIn</a>
+            </ul>
+            <ul className="flex">
+              <li className="m-3">
+                <a href="https://github.com/nicole-a-tesla" target="_blank">
+                  <GithubSVG />
+                </a>
               </li>
-              <li className={listItemClasses}>
-                <a href="https://github.com/nicole-a-tesla">github</a>
+              <li className="m-3">
+                <a href="https://www.linkedin.com/in/nicoleamccabe" target="_blank">
+                  <LinkedInSVG />
+                </a>
               </li>
-              <li className={listItemClasses}>
-                <a href="mailto:nicole.ashley.mccabe@gmail.com">say hi</a>
+              <li className="m-3">
+                <a href="mailto:nicole.ashley.mccabe@gmail.com" target="_blank">
+                  <EmailSVG />
+                </a>
               </li>
             </ul>
           </div>

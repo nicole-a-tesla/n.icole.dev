@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-custom-pink: oklch(85.51% 0.0411 12.31)
+  --color-custom-pink: oklch(85.51% 0.0411 12.31);
+  --green: oklch(87.18% 0.1269 141.37);
+  --purple: oklch(74.51% 0.1032 282.98);
+  --hot-pink: oklch(73.32% 0.2291 338.7);
+  --blue: oklch(69.03% 0.1562 256.43);
+  --orange: oklch(87.42% 0.1093 76.16);
+  --cyan: oklch(81.38% 0.0842 212.19);
 }
 
 html,
