@@ -3,6 +3,7 @@ import Head from "next/head";
 import GithubSVG from "../components/svgs/github";
 import LinkedInSVG from "../components/svgs/linkedin";
 import EmailSVG from "../components/svgs/email";
+import OldBoi from "../components/old-boi";
 
 const Home: NextPage = () => {
   return (
@@ -14,11 +15,14 @@ const Home: NextPage = () => {
         <link href="/dist/output.css" rel="stylesheet"/>
       </Head>
 
-      <main>
+      <main style={{overflowX: 'hidden'}}>
 
         <div className="flex flex-col items-center">
           <h1 className="text-2xl mt-5 mb-5">Hey, I'm Nicole</h1>
-          <img className="w-2/4	max-w-md mb-5" src="/262676_SB4adn8l.png"/>
+          <div className="max-w-md mb-5">
+            <OldBoi />
+          </div>
+
           <p className="text-xl mb-5">a software engineer living in Edinburgh.</p>
 
           <div>
