@@ -23,8 +23,11 @@ const Home: NextPage = () => {
 
           <div>
             <ul className="flex justify-center">
-              <li className="text-xl underline hover:text-(--purple)">
-                <a href="https://nicole-a-tesla.github.io/set-game">play set</a>
+              <li className="text-xl hover:text-(--purple) mr-2">
+                <a className="underline" href="https://nicole-a-tesla.github.io/set-game">play set</a>
+              </li>
+              <li className="text-xl hover:text-(--blue) mr-3">
+                <a className="underline" href="https://github.com/nicole-a-tesla/set-game"> (or see the code)</a>
               </li>
             </ul>
             <ul className="flex">
