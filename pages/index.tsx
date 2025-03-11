@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
         <div className="flex flex-col items-center">
           <h1 className="text-2xl mt-5 mb-5">Hey, I'm Nicole</h1>
-          <div className="max-w-md mb-5">
+          <div className="max-w-md">
             <OldBoi />
           </div>
 

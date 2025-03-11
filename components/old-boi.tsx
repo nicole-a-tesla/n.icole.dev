@@ -9,14 +9,22 @@ const OldBoi = () => {
         zIndex: '2'
     }
     const leftArmStyle = {
-        transform: 'translate(305px, -145px)',
+        transform: 'translate(300px, -145px)',
         width: '115px',
-        zIndex: '1'
+        zIndex: '1',
+        transformOrigin: '10px'
+    }
+    const leftArmAnimateEnd = {
+        transform: 'translate(300px, -145px) rotate(-20deg)',
     }
     const rightArmStyle = {
         transform: 'translate(250px, -180px)',
         width: '185px',
-        zIndex: '4'
+        zIndex: '4',
+        transformOrigin: '20px',
+    }
+    const rightArmAnimateEnd = {
+        transform: 'translate(250px, -180px) rotate(20deg)',
     }
     const laptopStyle = {
         width: '250px',
@@ -24,7 +32,7 @@ const OldBoi = () => {
         zIndex: '0'
     }
     return (
-        <div style={{width: '448px'}}>
+        <div style={{minWidth: '448px', transform: 'translateX(-30px)'}}>
             <img style={headStyle} className="absolute" src="/OB-head.png" />
             <img style={bodyStyle} className="relative" src="/OB1-body.png" />
             <img style={leftArmStyle} className="absolute" src="/OB-left-arm.png" />
