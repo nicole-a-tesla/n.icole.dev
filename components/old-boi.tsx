@@ -1,3 +1,5 @@
+import { motion } from "motion/react"
+
 const OldBoi = () => {
     const headStyle = {
         transform: 'translate(180px, 35px)',
@@ -9,34 +11,39 @@ const OldBoi = () => {
         zIndex: '2'
     }
     const leftArmStyle = {
-        transform: 'translate(300px, -145px)',
+        translate: '300px -145px',
         width: '115px',
         zIndex: '1',
         transformOrigin: '10px'
     }
-    const leftArmAnimateEnd = {
-        transform: 'translate(300px, -145px) rotate(-20deg)',
-    }
     const rightArmStyle = {
-        transform: 'translate(250px, -180px)',
+        translate: '250px -180px',
         width: '185px',
         zIndex: '4',
         transformOrigin: '20px',
-    }
-    const rightArmAnimateEnd = {
-        transform: 'translate(250px, -180px) rotate(20deg)',
     }
     const laptopStyle = {
         width: '250px',
         transform: 'translate(290px, -240px)',
         zIndex: '0'
     }
+
     return (
         <div style={{minWidth: '448px', transform: 'translateX(-30px)'}}>
             <img style={headStyle} className="absolute" src="/OB-head.png" />
             <img style={bodyStyle} className="relative" src="/OB1-body.png" />
-            <img style={leftArmStyle} className="absolute" src="/OB-left-arm.png" />
-            <img style={rightArmStyle} className="absolute" src="/OB-right-arm.png" />
+            <motion.img
+                style={leftArmStyle}
+                animate={{ rotate: -20 }}
+                transition={{ repeat: Infinity, repeatType: "reverse", bounce: 0, duration: 0.1 }}
+                className="absolute"
+                src="/OB-left-arm.png" />
+            <motion.img
+                style={rightArmStyle}
+                animate={{ rotate: 20 }}
+                transition={{ repeat: Infinity, repeatType: "reverse", bounce: 0, duration: 0.1 }}
+                className="absolute"
+                src="/OB-right-arm.png" />
             <img style={laptopStyle} className="absolute" src="/laptop.png" />
         </div>
     )
