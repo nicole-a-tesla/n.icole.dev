@@ -34,7 +34,7 @@ const Home: NextPage = () => {
                 <a className="underline" href="https://github.com/nicole-a-tesla/set-game"> (or see the code)</a>
               </li>
             </ul>
-            <ul className="flex">
+            <ul className="flex justify-center mb-4">
               <li className="m-3">
                 <a href="https://github.com/nicole-a-tesla" target="_blank" rel="noreferrer">
                   <GithubSVG />
@@ -51,6 +51,9 @@ const Home: NextPage = () => {
                 </a>
               </li>
             </ul>
+              <p className="text-xs">
+                Animation inspired by <a className="underline" href="https://www.etsy.com/uk/listing/666408848/macellarius-hand-carved-silicone" target="_blank" rel="noreferrer">this glorious boy</a> for sale on Etsy
+              </p>
           </div>
 
         </div>
