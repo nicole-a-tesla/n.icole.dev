@@ -29,7 +29,7 @@ const OldBoi = () => {
     }
 
     return (
-        <div style={{minWidth: '448px', transform: 'translateX(-30px)'}}>
+        <div style={{minWidth: '448px' }} className="-translate-x-[75px] md:-translate-x-[30px]">
             <img style={headStyle} className="absolute" src="/OB-head.png" />
             <img style={bodyStyle} className="relative" src="/OB1-body.png" />
             <motion.img
