@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                 <a className="underline" href="https://nicole-a-tesla.github.io/set-game">play set</a>
               </li>
               <li className="text-xl hover:text-(--blue) mr-3">
-                <a className="underline" href="https://github.com/nicole-a-tesla/set-game"> (or see the code)</a>
+                (<a className="underline" href="https://github.com/nicole-a-tesla/set-game">or see the code</a>)
               </li>
             </ul>
             <ul className="flex justify-center mb-4">
