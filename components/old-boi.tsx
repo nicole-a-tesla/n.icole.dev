@@ -35,7 +35,7 @@ const OldBoi = () => {
                 transition={{ repeat: Infinity, repeatType: "reverse", bounce: 0, duration: 0.1 }}
                 className="absolute z-4 origin-[20px]"
                 src="/OB-right-arm.png" />
-            <img style={laptopStyle} className="absolute z-0" src="/laptop.png" />
+            <img style={laptopStyle} className="absolute z-0" src="/laptop-sm.png" />
         </div>
     )
 }
