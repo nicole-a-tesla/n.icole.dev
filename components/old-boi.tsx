@@ -1,4 +1,5 @@
 import { motion } from "motion/react"
+import Image from "next/image"
 
 const OldBoi = () => {
     const headStyle = {
@@ -21,8 +22,12 @@ const OldBoi = () => {
 
     return (
         <div style={{minWidth: '448px' }} className="-translate-x-[75px] md:-translate-x-[30px]">
-            <img style={headStyle} className="absolute z-3" src="/OB-head.png" />
-            <img className="relative z-2" src="/OB1-body.png" />
+            <div style={headStyle} className="absolute z-3">
+                <Image priority={true} src="/OB-head.png" width={435} height={447} />
+            </div>
+            <div className="relative z-2">
+                <Image priority={true} src="/OB1-body.png" width={1140} height={855} />
+            </div>
             <motion.img
                 style={leftArmStyle}
                 animate={{ rotate: -20 }}
@@ -35,7 +40,9 @@ const OldBoi = () => {
                 transition={{ repeat: Infinity, repeatType: "reverse", bounce: 0, duration: 0.1 }}
                 className="absolute z-4 origin-[20px]"
                 src="/OB-right-arm.png" />
-            <img style={laptopStyle} className="absolute z-0" src="/laptop-sm.png" />
+            <div style={laptopStyle} className="absolute z-0">
+                <Image priority={true} src="/laptop-sm.png" width={5311} height={3733} />
+            </div>
         </div>
     )
 }
